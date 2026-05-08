@@ -26,7 +26,7 @@ export function BookCateringModal({ isOpen, onClose }: BookCateringModalProps) {
 
         {/* Form */}
         <div className="p-6">
-          <form className="space-y-6">
+          <form action="mailto:speedycatering@yahoo.com" method="POST" encType="text/plain" className="space-y-6">
             {/* Personal Information */}
             <div>
               <h3 style={{ fontFamily: 'Figtree, sans-serif', fontSize: '1.25rem', fontWeight: 500 }} className="text-[#06211A] mb-4">
@@ -39,6 +39,7 @@ export function BookCateringModal({ isOpen, onClose }: BookCateringModalProps) {
                   </label>
                   <input
                     type="text"
+                    name="firstName"
                     required
                     style={{ fontFamily: 'Figtree, sans-serif' }}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#06211A] focus:border-transparent"
@@ -51,6 +52,7 @@ export function BookCateringModal({ isOpen, onClose }: BookCateringModalProps) {
                   </label>
                   <input
                     type="text"
+                    name="lastName"
                     required
                     style={{ fontFamily: 'Figtree, sans-serif' }}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#06211A] focus:border-transparent"
@@ -65,6 +67,7 @@ export function BookCateringModal({ isOpen, onClose }: BookCateringModalProps) {
                   </label>
                   <input
                     type="email"
+                    name="email"
                     required
                     style={{ fontFamily: 'Figtree, sans-serif' }}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#06211A] focus:border-transparent"
@@ -77,6 +80,7 @@ export function BookCateringModal({ isOpen, onClose }: BookCateringModalProps) {
                   </label>
                   <input
                     type="tel"
+                    name="phone"
                     required
                     style={{ fontFamily: 'Figtree, sans-serif' }}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#06211A] focus:border-transparent"
@@ -99,6 +103,7 @@ export function BookCateringModal({ isOpen, onClose }: BookCateringModalProps) {
                   </label>
                   <input
                     type="date"
+                    name="eventDate"
                     required
                     style={{ fontFamily: 'Figtree, sans-serif' }}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#06211A] focus:border-transparent"
@@ -110,6 +115,7 @@ export function BookCateringModal({ isOpen, onClose }: BookCateringModalProps) {
                   </label>
                   <input
                     type="time"
+                    name="eventTime"
                     style={{ fontFamily: 'Figtree, sans-serif' }}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#06211A] focus:border-transparent"
                   />
@@ -123,6 +129,7 @@ export function BookCateringModal({ isOpen, onClose }: BookCateringModalProps) {
                   </label>
                   <input
                     type="number"
+                    name="guests"
                     required
                     min="1"
                     style={{ fontFamily: 'Figtree, sans-serif' }}
@@ -135,6 +142,7 @@ export function BookCateringModal({ isOpen, onClose }: BookCateringModalProps) {
                     Event Type
                   </label>
                   <select
+                    name="eventType"
                     style={{ fontFamily: 'Figtree, sans-serif' }}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#06211A] focus:border-transparent"
                   >
@@ -152,6 +160,7 @@ export function BookCateringModal({ isOpen, onClose }: BookCateringModalProps) {
                 </label>
                 <input
                   type="text"
+                  name="location"
                   style={{ fontFamily: 'Figtree, sans-serif' }}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#06211A] focus:border-transparent"
                   placeholder="Venue name and address"
@@ -223,6 +232,7 @@ export function BookCateringModal({ isOpen, onClose }: BookCateringModalProps) {
                 Additional Details or Dietary Requirements
               </label>
               <textarea
+                name="details"
                 rows={4}
                 style={{ fontFamily: 'Figtree, sans-serif' }}
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#06211A] focus:border-transparent resize-none"

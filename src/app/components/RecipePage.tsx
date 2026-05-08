@@ -247,12 +247,12 @@ export function RecipePage({ onBack }: RecipePageProps) {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {relatedRecipes.map((recipe) => (
-              <div key={recipe.id} className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer">
+              <div key={recipe.id} className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl hover:bg-gray-50 transition-all cursor-pointer">
                 <div className="h-64 overflow-hidden">
                   <ImageWithFallback
                     src={recipe.image}
                     alt={recipe.title}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="p-6">

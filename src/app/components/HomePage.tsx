@@ -71,12 +71,16 @@ export function HomePage({ onNavigate, onBookCatering }: HomePageProps) {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {recipes.map((recipe) => (
-              <div key={recipe.id} className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+              <div 
+                key={recipe.id} 
+                onClick={() => onNavigate('recipe')}
+                className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl hover:bg-gray-50 transition-all cursor-pointer"
+              >
                 <div className="h-64 overflow-hidden">
                   <ImageWithFallback
                     src={recipe.image}
                     alt={recipe.title}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="p-6">
@@ -86,14 +90,13 @@ export function HomePage({ onNavigate, onBookCatering }: HomePageProps) {
                   <p style={{ fontFamily: 'Figtree, sans-serif' }} className="text-[#6E7B8B] mb-4">
                     {recipe.description}
                   </p>
-                  <button
-                    onClick={() => onNavigate('recipe')}
+                  <div
                     style={{ fontFamily: 'Figtree, sans-serif' }}
-                    className="text-[#06211A] hover:text-[#184023] transition-colors inline-flex items-center gap-2"
+                    className="text-[#06211A] inline-flex items-center gap-2"
                   >
                     View Recipe
                     <ArrowRight className="w-4 h-4" />
-                  </button>
+                  </div>
                 </div>
               </div>
             ))}
