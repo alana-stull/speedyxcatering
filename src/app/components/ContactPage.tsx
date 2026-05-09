@@ -25,13 +25,14 @@ export function ContactPage() {
               <h2 style={{ fontFamily: 'Figtree, sans-serif', fontSize: '2rem', fontWeight: 600 }} className="text-[#06211A] mb-6">
                 Send Us a Message
               </h2>
-              <form className="space-y-6">
+              <form action="mailto:speedycatering@yahoo.com" method="POST" encType="text/plain" className="space-y-6">
                 <div>
                   <label style={{ fontFamily: 'Figtree, sans-serif' }} className="block text-[#06211A] mb-2">
                     Your Name
                   </label>
                   <input
                     type="text"
+                    name="name"
                     style={{ fontFamily: 'Figtree, sans-serif' }}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#06211A] focus:border-transparent"
                     placeholder="John Doe"
@@ -43,6 +44,7 @@ export function ContactPage() {
                   </label>
                   <input
                     type="email"
+                    name="email"
                     style={{ fontFamily: 'Figtree, sans-serif' }}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#06211A] focus:border-transparent"
                     placeholder="john@example.com"
@@ -54,6 +56,7 @@ export function ContactPage() {
                   </label>
                   <input
                     type="tel"
+                    name="phone"
                     style={{ fontFamily: 'Figtree, sans-serif' }}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#06211A] focus:border-transparent"
                     placeholder="(555) 123-4567"
@@ -65,6 +68,7 @@ export function ContactPage() {
                   </label>
                   <input
                     type="text"
+                    name="subject"
                     style={{ fontFamily: 'Figtree, sans-serif' }}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#06211A] focus:border-transparent"
                     placeholder="How can we help?"
@@ -76,6 +80,7 @@ export function ContactPage() {
                   </label>
                   <textarea
                     rows={6}
+                    name="message"
                     style={{ fontFamily: 'Figtree, sans-serif' }}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#06211A] focus:border-transparent resize-none"
                     placeholder="Tell us about your event or ask us anything..."
@@ -107,10 +112,7 @@ export function ContactPage() {
                       Email
                     </h3>
                     <p style={{ fontFamily: 'Figtree, sans-serif' }} className="text-[#6E7B8B]">
-                      contact@speedyxcatering.com
-                    </p>
-                    <p style={{ fontFamily: 'Figtree, sans-serif' }} className="text-[#6E7B8B]">
-                      events@speedyxcatering.com
+                      speedycatering@yahoo.com
                     </p>
                   </div>
                 </div>

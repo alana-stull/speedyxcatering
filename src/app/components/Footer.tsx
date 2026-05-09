@@ -20,8 +20,8 @@ export function Footer() {
             <h3 style={{ fontFamily: 'Figtree, sans-serif' }} className="font-semibold mb-4">Get in Touch</h3>
             <div className="flex items-center gap-2">
               <Mail className="w-5 h-5 text-[#B6C3DC]" />
-              <a href="mailto:contact@speedyxcatering.com" style={{ fontFamily: 'Figtree, sans-serif' }} className="text-[#B6C3DC] hover:text-white transition-colors">
-                contact@speedyxcatering.com
+              <a href="mailto:speedycatering@yahoo.com" style={{ fontFamily: 'Figtree, sans-serif' }} className="text-[#B6C3DC] hover:text-white transition-colors">
+                speedycatering@yahoo.com
               </a>
             </div>
           </div>
