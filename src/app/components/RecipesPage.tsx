@@ -80,7 +80,7 @@ export function RecipesPage({ onViewRecipe }: RecipesPageProps) {
               <div 
                 key={recipe.id} 
                 onClick={() => onViewRecipe(recipe.id)}
-                className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl hover:bg-gray-50 transition-all cursor-pointer"
+                className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:bg-gray-100 hover:-translate-y-1 transition-all duration-300 cursor-pointer"
               >
                 <div className="h-64 overflow-hidden">
                   <ImageWithFallback
