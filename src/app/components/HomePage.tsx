@@ -66,7 +66,7 @@ export function HomePage({ onNavigate, onBookCatering }: HomePageProps) {
               Featured Recipes
             </h2>
             <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '1.125rem' }} className="text-[#6E7B8B]">
-              From our kitchen to yours — a few of our favorite dishes to try at home.
+            From our kitchen to yours, a few of our favorite dishes to try at home.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
